@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import '../index.css';
 
-
-
 const Contact = () => {
 
   const [formData, setFormData] = useState({
@@ -20,7 +18,7 @@ const Contact = () => {
   };
 
   const sendEmail = (e) => {
-    
+
     e.preventDefault();
 
     /**
@@ -36,10 +34,9 @@ const Contact = () => {
         message: formData.message,
         },"//ErUmyO_N8_DhPAWQ5")
 
-   
     .then((result) => {
       alert('Message sent successfully!');
-    
+
     })
     .catch((error) => {
       console.error('Error sending message: ', error);
@@ -56,32 +53,32 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
-      <h2>Contact Me</h2>
+      <h2 >Contact Me</h2>
       <form onSubmit={sendEmail}>
-        <input 
-          type="text" 
-          name="name" 
-          placeholder="Name" 
-          value={formData.name} 
-          onChange={handleChange} 
-          required 
-        />
-        <input 
-          type="email" 
-          name="email" 
-          placeholder="Email" 
-          value={formData.email} 
-          onChange={handleChange} 
-          required 
-        />
-        <textarea 
-          name="message" 
-          placeholder="Message" 
-          value={formData.message} 
-          onChange={handleChange} 
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={formData.name}
+          onChange={handleChange}
           required
         />
-        <button type="submit" className="btn">Send</button>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Message"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        />
+        <button type="submit" id="submit-btn" className='btn'>Send</button>
       </form>
     </section>
   );

@@ -1,7 +1,9 @@
 import React from 'react';
 import '../index.css';
 
-const aboutMe = `
+
+const About = () => {
+  const aboutMe = `
 
 I am a Backend Java Spring Boot Developer with a strong focus on building scalable, secure, and high-performance backend systems. Over the course of my career, I have honed my skills in Java and the Spring Boot framework, creating efficient APIs and backend services that cater to complex business needs.
 
@@ -11,9 +13,6 @@ My passion lies in creating robust backend infrastructures that provide a seamle
 
 I am constantly seeking opportunities to solve real-world problems through technology, and I enjoy working in dynamic team environments where collaboration and innovation are key. I thrive when faced with challenging tasks and always aim to contribute meaningfully to projects that push boundaries and create lasting value.
 `
-
-
-const About = () => {
   return (
     <section id="about" className='about' >
       <h2>About Me</h2>

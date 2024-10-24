@@ -9,8 +9,11 @@ import Footer from './components/Footer';
 import './index.css';
 
 function App() {
+
+
   return (
     <div className="App">
+      
       <Navbar />
        <Hero /> 
       <About />
@@ -18,8 +21,10 @@ function App() {
       <Skills />
       <Contact />
       <Footer /> 
+     
     </div>
   );
 }
+
 
 export default App;

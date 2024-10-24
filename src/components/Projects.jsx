@@ -14,7 +14,7 @@ const Projects = () => {
         {projectList.map((project, index) => (
           <div key={index} className="card">
             <h3>{project.title}</h3>
-            <p>{project.description}</p>
+            <p className='justify'>{project.description}</p>
             <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn">View Project</a>
           </div>
         ))}
