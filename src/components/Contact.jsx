@@ -32,7 +32,7 @@ const Contact = () => {
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message,
-        },"//ErUmyO_N8_DhPAWQ5")
+        },"ErUmyO_N8_DhPAWQ5")
 
     .then((result) => {
       alert('Message sent successfully!');
