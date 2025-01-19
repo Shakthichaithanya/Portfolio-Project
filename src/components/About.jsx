@@ -15,7 +15,7 @@ I am constantly seeking opportunities to solve real-world problems through techn
 `
   return (
     <section id="about" className='about' >
-      <h2>About Me</h2>
+      <h2 id="title">About Me</h2>
       <p className='justify'> {aboutMe}
       </p>
     </section>
